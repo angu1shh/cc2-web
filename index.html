@@ -49,6 +49,22 @@
       <canvas id="canvas" align="center" oncontextmenu="event.preventDefault()"></canvas>
     </div>
 
+	  <script>
+		  (function () {
+			const canvas = document.getElementById("canvas");
+			function resizeCanvas() {
+			  const width = window.innerWidth;
+			  const height = window.innerHeight;
+			  canvas.style.width = width + "px";
+			  canvas.style.height = height + "px";
+			  canvas.width = width;
+			  canvas.height = height;
+			}
+			resizeCanvas();
+			window.addEventListener("resize", resizeCanvas);
+		  })();
+	</script>
+
     <script type='text/javascript'>
       var statusElement = document.getElementById('status');
       var progressElement = document.getElementById('progress');
