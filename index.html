@@ -1,11 +1,6 @@
 <!doctype html>
 <html lang="en-us">
    <head>
-	   	<script>
-		Object.defineProperty(window, "devicePixelRatio", {
-		  get: function () { return 1; }
-		});
-  		</script>
         <title>CoinCollectors2-web</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,22 +43,6 @@
     <div>
       <canvas id="canvas" align="center" oncontextmenu="event.preventDefault()"></canvas>
     </div>
-
-	  <script>
-		  (function () {
-			const canvas = document.getElementById("canvas");
-			function resizeCanvas() {
-			  const width = window.innerWidth;
-			  const height = window.innerHeight;
-			  canvas.style.width = width + "px";
-			  canvas.style.height = height + "px";
-			  canvas.width = width;
-			  canvas.height = height;
-			}
-			resizeCanvas();
-			window.addEventListener("resize", resizeCanvas);
-		  })();
-	</script>
 
     <script type='text/javascript'>
       var statusElement = document.getElementById('status');
